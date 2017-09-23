@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Signature.SignatureActivity">
+    <com.rm.freedrawview.FreeDrawView
+        android:id="@+id/mDrawView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:paintColor="@color/black"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/signature_bottom_background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="画笔宽度"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"/>
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/stroke_width"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:id="@+id/btn_clear_all"
+            android:text="重置"
+            android:textColor="@color/white"
+            android:background="@drawable/signature_btn_background" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:id="@+id/saveBtn"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:background="@drawable/signature_btn_background"/>
+    </LinearLayout>
+
+
+</LinearLayout>

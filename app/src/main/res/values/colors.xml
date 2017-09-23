@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#268969</color>
+    <color name="colorPrimaryDark">#268969</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorLogin">#2fa881</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+    <color name="signature_bottom_background">#c1c1c1</color>
+
+    <!--签名底部按钮被选中的颜色-->
+    <color name="signature_bottom_btn_press">#6c6c6c</color>
+
+    <color name="ContractDetailsBackground">#f7f7f7</color>
+
+    <color name="ContractUrl_Btn_Press">#dfdfdf</color>
+
+    <!--侧滑菜单item点击时颜色-->
+    <color name="gray">#dfdfdf</color>
+
+    <!---->
+    <color name="register_addImgTv_color">#FFCC00</color>
+
+</resources>

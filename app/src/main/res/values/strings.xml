@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">劳动合同</string>
+    <string name="login_success">登录成功</string>
+    <string name="login">劳动合同</string>
+    <string name="Username">登录名</string>
+    <string name="Password">密码</string>
+    <string name="forgot_your_password">忘记密码?</string>
+    <string name="go">登录</string>
+    <string name="repeat_password">确定密码</string>
+    <string name="next">注册</string>
+    <string name="register">加入我们</string>
+
+
+    <string name="github_hint">Show Git Repository</string>
+    <string name="delete_draw">Delete draw</string>
+    <string name="show_screenshot">Take Screenshot</string>
+    <string name="github_url">https://github.com/RiccardoMoro</string>
+    <string name="error_opening_url">Error opening link</string>
+</resources>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ContractDetailsBackground">
+
+    <!--头部-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorLogin">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/retrun_img"
+            android:padding="13dp"
+            android:id="@+id/bookreturn_returnBtn"/>
+        <!--分割线-->
+        <TextView
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="合同详情"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <!--主题-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/contractdetails_contractName"
+        android:text="合同"
+        android:textSize="18dp"
+        android:textColor="@color/colorLogin"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/contracturl_btn_background"
+            android:id="@+id/contractdetails_contracturl">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="合同链接"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorLogin"
+                android:textSize="16dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/contract_url"
+                android:padding="2dp"/>
+        </LinearLayout>
+
+    <!--甲方(用人单位)-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/contractdetails_companyA_Name"
+        android:text="公司甲方"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/contractdetails_companyA_Type"
+        android:text="经济类型"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/contractdetails_companyA_LegalPerson"
+        android:text="公司(甲方)法定代表人"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/contractdetails_companyA_Address"
+        android:text="地址"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_companyA_PostalCode"
+            android:text="邮政编码"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+
+        <!--劳动合同期限-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_contractType"
+            android:text="合同类型"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_contract_startTime"
+            android:text="合同起始时间"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_contract_endTime"
+            android:text="合同截止时间"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_contract_compeltion"
+            android:text="合同任务完成描述"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <!--工作内容和工作地点-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_partyB_job_tv"
+            android:text="乙方工作岗位"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_partyB_jobAddress_tv"
+            android:text="工作地点"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <!--工作时间和休息休假-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_partyB_rest_tv"
+            android:text="工时制"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <!--劳动报酬-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_partyB_wages_tv"
+            android:text="正常时间工资元/月"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_partyB_overtimePay_tv"
+            android:text="加班工资元/月"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_partyB_payrollday_tv"
+            android:text="核算上月工资日/月"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <!--劳动纪律及相关制度-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_oneLoss_tv"
+            android:text="一次损失"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_oneYearLoss_tv"
+            android:text="一年损失"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <!--劳动争议处理及其他-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_mainAccessories_tv"
+            android:text="主要附件"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_emergencyContact_tv"
+            android:text="紧急联系人"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_contactAddress_tv"
+            android:text="联系地址"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contractdetails_contactNumber_tv"
+            android:text="联系电话"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="签名"
+            android:textColor="@color/colorLogin"
+            android:textSize="16dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"/>
+
+        <com.rm.freedrawview.FreeDrawView
+            android:id="@+id/mDrawView"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            app:paintColor="@color/black"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/signature_bottom_background">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="画笔宽度"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"/>
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:id="@+id/stroke_width"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:id="@+id/btn_clear_all"
+                android:text="重置"
+                android:textColor="@color/white"
+                android:background="@drawable/signature_btn_background" />
+
+        </LinearLayout>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_marginTop="30dp"
+            android:id="@+id/comfireContractBtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            fancy:fb_text="确定签约"
+            fancy:fb_textColor="@color/white"
+            fancy:fb_borderColor="@color/white"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/colorLogin"
+            fancy:fb_focusColor="@color/white"
+            fancy:fb_radius="30dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

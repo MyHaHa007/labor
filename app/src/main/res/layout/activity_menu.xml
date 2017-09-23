@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:id="@+id/activityMenu"
+    android:background="@color/white">
+    <!--头部-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorLogin"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/menu_userinfo">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--头像-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/menu_img_tuoxiang"
+                android:layout_above="@+id/username"
+                android:layout_centerHorizontal="true" />
+
+            <!--loginname-->
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/mail"
+                android:gravity="center"
+                android:text="superadmin"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <!--name-->
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="超级系统管理员"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <cn.tianruan.LaborContractUser.CustomView.MenuItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemText="退出登录"
+        app:itemSrc="@mipmap/menu_img_exit"
+        android:clickable="true"
+        android:background="@drawable/menu_item_check"
+        android:id="@+id/menu_exit"/>
+
+</LinearLayout>
